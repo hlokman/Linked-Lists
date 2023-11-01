@@ -2,7 +2,6 @@ class LinkedList {
   constructor() {
     this.length = 0;
     this.head = null;
-    //this.tail = null;
   }
 
   append(value) {
@@ -70,9 +69,6 @@ class LinkedList {
   }
 
   contains(value) {
-    /*if (this.head == null) {
-      return false;
-    }*/
     let pointer = this.head;
     for (let i = 0; i < this.length; i++) {
       if (pointer.value == value) {
@@ -111,11 +107,3 @@ class Node {
     this.nextNode = nextNode;
   }
 }
-
-/*
-let list = new LinkedList();
-list.append(5);
-list.append(7);
-list.append(9);
-list.prepend(2);
-*/
